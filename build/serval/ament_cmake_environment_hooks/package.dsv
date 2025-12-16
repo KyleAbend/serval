@@ -1,0 +1,4 @@
+source;share/serval/local_setup.bash
+source;share/serval/local_setup.dsv
+source;share/serval/local_setup.sh
+source;share/serval/local_setup.zsh

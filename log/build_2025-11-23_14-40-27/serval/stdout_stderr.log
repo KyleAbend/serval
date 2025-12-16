@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/dev_ws/install/serval/lib/serval/joystick_control.py
+-- Symlinking: /home/dev_ws/install/serval/share/serval/config/controllers.yaml
+-- Symlinking: /home/dev_ws/install/serval/share/serval/launch/serval.launch.py
+-- Symlinking: /home/dev_ws/install/serval/share/serval/description/serval.urdf.xacro
+-- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/base_link.stl
+-- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/foot_link.stl
+-- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/hip_link.stl
+-- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/lower_leg_link.stl
+-- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/upper_leg_link.stl
+-- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/package_run_dependencies/serval
+-- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/parent_prefix_path/serval
+-- Symlinking: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.sh
+-- Symlinking: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.dsv
+-- Symlinking: /home/dev_ws/install/serval/share/serval/environment/path.sh
+-- Symlinking: /home/dev_ws/install/serval/share/serval/environment/path.dsv
+-- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.bash
+-- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.sh
+-- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.zsh
+-- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.dsv
+-- Symlinking: /home/dev_ws/install/serval/share/serval/package.dsv
+-- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/packages/serval
+-- Symlinking: /home/dev_ws/install/serval/share/serval/cmake/servalConfig.cmake
+-- Symlinking: /home/dev_ws/install/serval/share/serval/cmake/servalConfig-version.cmake
+-- Symlinking: /home/dev_ws/install/serval/share/serval/package.xml

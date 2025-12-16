@@ -1,0 +1,56 @@
+[0.005s] Invoking command in '/home/dev_ws/build/serval': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dev_ws/src/serval -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev_ws/install/serval
+[0.143s] -- The C compiler identification is GNU 13.3.0
+[0.234s] -- The CXX compiler identification is GNU 13.3.0
+[0.246s] -- Detecting C compiler ABI info
+[0.302s] -- Detecting C compiler ABI info - done
+[0.307s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.308s] -- Detecting C compile features
+[0.308s] -- Detecting C compile features - done
+[0.314s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.383s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.384s] -- Detecting CXX compile features
+[0.384s] -- Detecting CXX compile features - done
+[0.387s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.476s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.520s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.597s] -- Found rclpy: 9.1.2 (/opt/ros/kilted/share/rclpy/cmake)
+[0.598s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[0.663s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.664s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.664s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.665s] -- Added test 'lint_cmake' to check CMake code style
+[0.665s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.666s] -- Added test 'xmllint' to check XML markup files
+[0.667s] -- Configuring done (0.7s)
+[0.670s] -- Generating done (0.0s)
+[0.671s] -- Build files have been written to: /home/dev_ws/build/serval
+[0.674s] Invoked command in '/home/dev_ws/build/serval' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dev_ws/src/serval -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev_ws/install/serval
+[0.675s] Invoking command in '/home/dev_ws/build/serval': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dev_ws/build/serval -- -j16 -l16
+[0.700s] Invoked command in '/home/dev_ws/build/serval' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dev_ws/build/serval -- -j16 -l16
+[0.706s] Invoking command in '/home/dev_ws/build/serval': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dev_ws/build/serval
+[0.711s] -- Install configuration: ""
+[0.711s] -- Execute custom install script
+[0.711s] -- Symlinking: /home/dev_ws/install/serval/share/serval/launch/serval.launch.py
+[0.717s] -- Symlinking: /home/dev_ws/install/serval/share/serval/description/serval.urdf.xacro
+[0.723s] -- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/base_link.stl
+[0.728s] -- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/foot_link.stl
+[0.733s] -- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/hip_link.stl
+[0.738s] -- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/lower_leg_link.stl
+[0.744s] -- Symlinking: /home/dev_ws/install/serval/share/serval/meshes/upper_leg_link.stl
+[0.749s] -- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/package_run_dependencies/serval
+[0.755s] -- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/parent_prefix_path/serval
+[0.760s] -- Symlinking: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.sh
+[0.765s] -- Symlinking: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.dsv
+[0.771s] -- Symlinking: /home/dev_ws/install/serval/share/serval/environment/path.sh
+[0.776s] -- Symlinking: /home/dev_ws/install/serval/share/serval/environment/path.dsv
+[0.781s] -- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.bash
+[0.787s] -- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.sh
+[0.792s] -- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.zsh
+[0.797s] -- Symlinking: /home/dev_ws/install/serval/share/serval/local_setup.dsv
+[0.803s] -- Symlinking: /home/dev_ws/install/serval/share/serval/package.dsv
+[0.809s] -- Symlinking: /home/dev_ws/install/serval/share/ament_index/resource_index/packages/serval
+[0.815s] -- Symlinking: /home/dev_ws/install/serval/share/serval/cmake/servalConfig.cmake
+[0.820s] -- Symlinking: /home/dev_ws/install/serval/share/serval/cmake/servalConfig-version.cmake
+[0.826s] -- Symlinking: /home/dev_ws/install/serval/share/serval/package.xml
+[0.833s] Invoked command in '/home/dev_ws/build/serval' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dev_ws/build/serval

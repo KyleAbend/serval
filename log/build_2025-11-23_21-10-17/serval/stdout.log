@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/launch/serval.launch.py
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/description/serval.urdf.xacro
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/config/serval_control.yaml
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/meshes/base_link.stl
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/meshes/foot_link.stl
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/meshes/hip_link.stl
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/meshes/lower_leg_link.stl
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/meshes/upper_leg_link.stl
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/ament_index/resource_index/package_run_dependencies/serval
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/ament_index/resource_index/parent_prefix_path/serval
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/environment/path.sh
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/environment/path.dsv
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/local_setup.bash
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/local_setup.sh
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/local_setup.zsh
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/local_setup.dsv
+-- Symlinking: /home/dev_ws/install/serval/share/serval/package.dsv
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/ament_index/resource_index/packages/serval
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/cmake/servalConfig.cmake
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/cmake/servalConfig-version.cmake
+-- Up-to-date symlink: /home/dev_ws/install/serval/share/serval/package.xml
+-- Up-to-date: /home/dev_ws/install/serval/lib/serval/joint_teleop

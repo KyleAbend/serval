@@ -1,0 +1,8 @@
+source;share/serval/hook/cmake_prefix_path.ps1
+source;share/serval/hook/cmake_prefix_path.dsv
+source;share/serval/hook/cmake_prefix_path.sh
+source;share/serval/local_setup.bash
+source;share/serval/local_setup.dsv
+source;share/serval/local_setup.ps1
+source;share/serval/local_setup.sh
+source;share/serval/local_setup.zsh
