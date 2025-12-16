@@ -1,6 +1,5 @@
 /home/dev_ws/install/serval/share/serval/launch/serval.launch.py
 /home/dev_ws/install/serval/share/serval/description/serval.urdf.xacro
-/home/dev_ws/install/serval/share/serval/description/servalOLD.urdf.xacro
 /home/dev_ws/install/serval/share/serval/config/serval_control.yaml
 /home/dev_ws/install/serval/share/serval/meshes/base_link.stl
 /home/dev_ws/install/serval/share/serval/meshes/foot_link.stl

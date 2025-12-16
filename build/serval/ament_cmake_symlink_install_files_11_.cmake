@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_files("/home/dev_ws/src/serval" FILES "/home/dev_ws/build/serval/ament_cmake_index/share/ament_index/resource_index/packages/serval" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/dev_ws/serval/src/serval" FILES "/home/dev_ws/build/serval/ament_cmake_index/share/ament_index/resource_index/packages/serval" "DESTINATION" "share/ament_index/resource_index/packages")

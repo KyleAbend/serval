@@ -344,7 +344,7 @@ serval_BINARY_DIR:STATIC=/home/dev_ws/build/serval
 serval_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-serval_SOURCE_DIR:STATIC=/home/dev_ws/src/serval
+serval_SOURCE_DIR:STATIC=/home/dev_ws/serval/src/serval
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
@@ -434,7 +434,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/dev_ws/src/serval
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/dev_ws/serval/src/serval
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

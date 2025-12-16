@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import rclpy
+import numpy as np
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float64MultiArray
@@ -11,11 +12,13 @@ class JointTeleopNode(Node):
         # Configuration
         self.declare_parameter('joystick_axis_0', 0)        # Left stick X for joint_0
         self.declare_parameter('joystick_axis_1', 1)        # Left stick Y for joint_1
+        self.declare_parameter("joystick_axis_2", 4)        # Right stick Y for joint_2
         self.declare_parameter('joint_speed_scale', 1)
         self.declare_parameter('max_joint_position', 1.5707963)  # ~90 degrees
         self.declare_parameter('min_joint_position', -1.5707963) # ~-90 degrees
         self.axis_0 = self.get_parameter('joystick_axis_0').value
         self.axis_1 = self.get_parameter('joystick_axis_1').value
+        self.axis_2 = self.get_parameter('joystick_axis_2').value
         self.speed_scale = self.get_parameter('joint_speed_scale').value
         self.max_pos = self.get_parameter('max_joint_position').value
         self.min_pos = self.get_parameter('min_joint_position').value
@@ -41,6 +44,7 @@ class JointTeleopNode(Node):
         self.get_logger().info('Joint teleoperation node started. PS3 controller ready.')
         self.get_logger().info(f'  Left stick X (axis {self.axis_0}) -> joint_0')
         self.get_logger().info(f'  Left stick Y (axis {self.axis_1}) -> joint_1')
+        self.get_logger().info(f'  Right stick Y (axis {self.axis_2}) -> joint_2')
     
     def joy_callback(self, msg: Joy):
         """
@@ -50,25 +54,55 @@ class JointTeleopNode(Node):
         - Left stick Y: controls joint_1
         """
         # Get joystick values
-        if len(msg.axes) > max(self.axis_0, self.axis_1):
+        if len(msg.axes) > max(self.axis_0, self.axis_1, self.axis_2):
             input_0 = msg.axes[self.axis_0]
             input_1 = msg.axes[self.axis_1]
+            input_2 = msg.axes[self.axis_2]
 
             target_pos_0 = input_0 * self.max_pos
             target_pos_1 = input_1 * self.max_pos
+            target_pos_2 = input_2 * self.max_pos
             
             # Update joint positions (integrate stick movement)
-            self.joint_positions[0] = target_pos_0
-            self.joint_positions[1] = target_pos_1
 
-            self.joint_positions[3] = target_pos_0
-            self.joint_positions[4] = target_pos_1
+            x = -target_pos_1 / 10
+            zl = target_pos_0 / 10 + 0.065
+            zr = target_pos_0 / 10 - 0.065
+            y = -(0.18 * np.sqrt(2)) + target_pos_2 / 50
 
-            self.joint_positions[6] = target_pos_0
-            self.joint_positions[7] = target_pos_1
+            dl = np.sqrt(y ** 2 + zl ** 2 - 0.065 ** 2)
+            dr = np.sqrt(y ** 2 + zr ** 2 - 0.065 ** 2)
+            
+            gl = np.sqrt(dl ** 2 + x ** 2)
+            gr = np.sqrt(dr ** 2 + x ** 2)
 
-            self.joint_positions[9] = target_pos_0
-            self.joint_positions[10] = target_pos_1
+            theta1l = np.arctan2(y, zl) + np.arctan2(dl, 0.065)
+
+            theta3l = np.arccos((gl ** 2 - 0.0648)/0.0648)
+
+            theta2l = np.arctan2(x, dl) + np.arcsin(0.18 * np.sin(theta3l) / gl)
+
+            theta1r = np.arctan2(y, zr) + np.arctan2(dr, -0.065)
+
+            theta3r = np.arccos((gr ** 2 - 0.0648)/0.0648)
+
+            theta2r = np.arctan2(x, dr) + np.arcsin(0.18 * np.sin(theta3r) / gr)
+
+            self.joint_positions[0] = theta1l
+            self.joint_positions[1] = theta2l
+            self.joint_positions[2] = theta3l
+
+            self.joint_positions[3] = theta1r
+            self.joint_positions[4] = -theta2r
+            self.joint_positions[5] = theta3r
+
+            self.joint_positions[6] = -theta1l
+            self.joint_positions[7] = theta2l
+            self.joint_positions[8] = theta3l
+
+            self.joint_positions[9] = -theta1r
+            self.joint_positions[10] = -theta2r
+            self.joint_positions[11] =  theta3r
 
             # Publish commands
             cmd_msg = Float64MultiArray()

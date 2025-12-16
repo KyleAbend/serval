@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev_ws/src/serval
+CMAKE_SOURCE_DIR = /home/dev_ws/serval/src/serval
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/dev_ws/build/serval
@@ -82,6 +82,6 @@ CMakeFiles/serval_uninstall.dir/clean:
 .PHONY : CMakeFiles/serval_uninstall.dir/clean
 
 CMakeFiles/serval_uninstall.dir/depend:
-	cd /home/dev_ws/build/serval && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev_ws/src/serval /home/dev_ws/src/serval /home/dev_ws/build/serval /home/dev_ws/build/serval /home/dev_ws/build/serval/CMakeFiles/serval_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/dev_ws/build/serval && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev_ws/serval/src/serval /home/dev_ws/serval/src/serval /home/dev_ws/build/serval /home/dev_ws/build/serval /home/dev_ws/build/serval/CMakeFiles/serval_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/serval_uninstall.dir/depend
 

@@ -320,7 +320,7 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "description" "config" "meshes" "DESTINATION" "share/serval")
-ament_cmake_symlink_install_directory("/home/dev_ws/src/serval" DIRECTORY "launch" "description" "config" "meshes" "DESTINATION" "share/serval")
+ament_cmake_symlink_install_directory("/home/dev_ws/serval/src/serval" DIRECTORY "launch" "description" "config" "meshes" "DESTINATION" "share/serval")
 
 # install(FILES "/home/dev_ws/build/serval/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serval" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 include("/home/dev_ws/build/serval/ament_cmake_symlink_install_files_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
@@ -361,5 +361,5 @@ include("/home/dev_ws/build/serval/ament_cmake_symlink_install_files_11_${CMAKE_
 # install(FILES "/home/dev_ws/build/serval/ament_cmake_core/servalConfig.cmake" "/home/dev_ws/build/serval/ament_cmake_core/servalConfig-version.cmake" "DESTINATION" "share/serval/cmake")
 include("/home/dev_ws/build/serval/ament_cmake_symlink_install_files_12_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/dev_ws/src/serval/package.xml" "DESTINATION" "share/serval")
+# install(FILES "/home/dev_ws/serval/src/serval/package.xml" "DESTINATION" "share/serval")
 include("/home/dev_ws/build/serval/ament_cmake_symlink_install_files_13_${CMAKE_INSTALL_CONFIG_NAME}.cmake")

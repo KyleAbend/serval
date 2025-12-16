@@ -1,4 +1,4 @@
-# Install script for directory: /home/dev_ws/src/serval
+# Install script for directory: /home/dev_ws/serval/src/serval
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,11 +47,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serval" TYPE PROGRAM RENAME "joint_teleop" FILES "/home/dev_ws/src/serval/src/joint_teleop.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serval" TYPE PROGRAM RENAME "joint_teleop" FILES "/home/dev_ws/serval/src/serval/src/joint_teleop.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serval" TYPE PROGRAM RENAME "joint_states_publisher" FILES "/home/dev_ws/src/serval/src/joint_states_publisher.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serval" TYPE PROGRAM RENAME "joint_states_publisher" FILES "/home/dev_ws/serval/src/serval/src/joint_states_publisher.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
